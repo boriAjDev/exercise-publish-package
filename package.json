@@ -1,3 +1,5 @@
 {
-  "some" : "damn config right here!"
+  "name": "my-awesome-package",
+  "version": "1.0.0",
+  "author": "bori bori.ajifa@slalom.com"
 }
