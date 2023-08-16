@@ -28,9 +28,9 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: sudo npm cache clean --force
+      # - run: sudo npm cache clean --force
       - run: npm install -g npm@6
-      - run: npm login
+      - run: npm adduser
         # env:
         #   USERNAME: boriAjDev
         #   NODE_AUTH_TOKEN: ${{secrets.REGSTY_ACCESS_TOKEN}}
