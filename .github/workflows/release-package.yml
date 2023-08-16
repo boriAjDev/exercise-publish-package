@@ -30,11 +30,11 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm install -g npm@6
       - run: sudo npm cache verify
-      - run: npm login --USERNAME=USERNAME --TOKEN==NODE_AUTH_TOKEN --PUBLIC-EMAIL-ADDRESS=PUBLIC-EMAIL-ADDRESS
-        env:
-          USERNAME: boriAjDev
-          NODE_AUTH_TOKEN: ${{secrets.REGSTY_ACCESS_TOKEN}}
-          PUBLIC-EMAIL-ADDRESS: bori.ajifa@slalom.com
+      - run: npm login
+        # env:
+        #   USERNAME: boriAjDev
+        #   NODE_AUTH_TOKEN: ${{secrets.REGSTY_ACCESS_TOKEN}}
+        #   PUBLIC-EMAIL-ADDRESS: bori.ajifa@slalom.com
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.REGSTY_ACCESS_TOKEN}}
