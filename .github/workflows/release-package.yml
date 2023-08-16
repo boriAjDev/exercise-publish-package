@@ -28,11 +28,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: sudo npm cache clean --force
       - run: npm install -g npm@6
-      - run: npm login
-        env:
-              NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: npm ci
+      # - run: npm login
+      #   env:
+      #         NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
