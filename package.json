@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/boriAjDev/exercise-publish-package/issues"
   },
-  "homepage": "https://github.com/boriAjDev/exercise-publish-package#readme"
+  "homepage": "https://github.com/boriAjDev/exercise-publish-package#readme",
+  "publishConfig": {
+    "@boriAjDev:registry": "https://npm.pkg.github.com"
+  }
 }
